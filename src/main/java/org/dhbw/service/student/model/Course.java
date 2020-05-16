@@ -5,17 +5,13 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
-import lombok.AllArgsConstructor;
 import lombok.Data;
 
-@Entity
 @Data
-@AllArgsConstructor
-public class Student {
+@Entity
+public class Course {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
-    int id;
-    String firstName;
-    String lastName;
-    String studentNumber;
+    Long id;
+    String title;
 }
